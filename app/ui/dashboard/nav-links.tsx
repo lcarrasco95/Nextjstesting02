@@ -25,16 +25,6 @@ export default function NavLinks() {
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;
-        console.log(
-          "Generated classes for link:",
-          link.name,
-          clsx(
-            'flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3 text-sm font-medium md:flex-none md:justify-start md:p-2 md:px-3',
-            pathname === link.href
-              ? 'bg-sky-100 text-blue-600'
-              : 'bg-gray-50 hover:bg-sky-100 hover:text-blue-600',
-          )
-        );
         return (
           <Link key={link.name} href={link.href}>
   <div
